@@ -1,3 +1,11 @@
+'use strict';
+const expect = require('chai')
+  .use(require('dirty-chai'))
+  .expect;
+
+const library = require('./library');
+
+
 /*******************************************************************************
  * Asynchronous code
  * 
@@ -11,14 +19,6 @@
  * https://mochajs.org/#asynchronous-code
  * 
  ******************************************************************************/
-
-'use strict';
-const expect = require('chai')
-  .use(require('dirty-chai'))
-  .expect;
-
-const library = require('./library');
-
 
 describe('asynchronous code', () => {
 

@@ -1,16 +1,83 @@
 'use strict';
 
-import 'mocha!./01-intro-to-assertions/part-1';
-import 'mocha!./01-intro-to-assertions/part-2';
-import 'mocha!./01-intro-to-assertions/part-3';
-import 'mocha!./01-intro-to-assertions/part-4';
-import 'mocha!./01-intro-to-assertions/part-5';
-import 'mocha!./01-intro-to-assertions/part-6';
+console.log('here');
+const React = require('react');
+const ReactDom = require('react-dom');
+const { Router, Route, Link, browserHistory } = require('react-router');
 
-import 'mocha!./02-asynchronous-code/part-1';
+const App = React.createClass({
+  render() {
+    return (
+      <div>
+        <h1>Automated Testing Workshop</h1>
+        <ul className="nav">
+          <li><a href="./one">One</a></li>
+          <li><a href="./two">Two</a></li>
+          <li><a href="./three">Three</a></li>
+          <li><a href="./four">Four</a></li>
+          <li><a href="./five">Five</a></li>
+        </ul>
+        {this.props.children}
+      </div>
+    );
+  }
+});
 
-import 'mocha!./03-spies/part-1';
-import 'mocha!./03-spies/part-2';
 
-import 'mocha!./04-stubs/part-1';
-import 'mocha!./04-stubs/part-2';
+const One = React.createClass({
+  render() {
+    require('./01-intro-to-assertions/test');
+    return (
+      <h2>01 - Introduction to Assertions</h2>
+    );
+  }
+});
+
+const Two = React.createClass({
+  render() {
+    require('./02-asynchronous-code/test');
+    return (
+      <h2>03 - Asynchronous Code</h2>
+    );
+  }
+});
+
+const Three = React.createClass({
+  render() {
+    require('./03-spies/test');
+    return (
+      <h2>03 - Spies</h2>
+    );
+  }
+});
+
+const Four = React.createClass({
+  render() {
+    require('./04-stubs/test');
+    return (
+      <h2>04 - Stubs</h2>
+    );
+  }
+});
+
+const Five = React.createClass({
+  render() {
+    require('./05-react/test');
+    return (
+      <h2>05 - React</h2>
+    );
+  }
+});
+
+
+ReactDom.render((
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <Route path="one" component={One} />
+      <Route path="two" component={Two}/>
+      <Route path="three" component={Three}/>
+      <Route path="four" component={Four}/>
+      <Route path="five" component={Five}/>
+    </Route>
+  </Router>
+), document.getElementById('root'));

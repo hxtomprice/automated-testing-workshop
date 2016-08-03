@@ -4,7 +4,7 @@
   "description": "An introduction to automated testing",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server  --inline --hot"
+    "start": "./node_modules/.bin/webpack-dev-server --inline --hot"
   },
   "author": "",
   "license": "ISC",
@@ -14,10 +14,15 @@
     "babel-preset-react": "^6.11.1",
     "chai": "^3.5.0",
     "dirty-chai": "^1.2.2",
+    "enzyme": "^2.4.1",
     "jquery": "^3.1.0",
     "make-up": "^9.2.0",
     "mocha": "^2.5.3",
     "mocha-loader": "^0.7.1",
+    "react": "^15.3.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1",
     "sinon": "^2.0.0-pre.2",
     "sinon-chai": "^2.8.0",
     "webpack": "^1.13.1",

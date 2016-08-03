@@ -42,6 +42,7 @@ describe('doubleRandom', () => {
 
 });
 
+
 describe('getExchangeRates', () => {
 
   beforeEach(() => {

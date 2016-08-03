@@ -6,10 +6,19 @@ const loaders = [
 
 module.exports = {
   entry: './tasks/index.js',
+  externals: {
+    'cheerio': 'window',
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
+  },
   module: { loaders },
   output: {
-     path: './www',
-     publicPath: '/www',
-     filename: 'automated-testing-workshop.js'
+    path: './www',
+    filename: 'automated-testing-workshop.js'
+  },
+  devServer: {
+    contentBase: './www/',
+    historyApiFallback: true
   }
 };
