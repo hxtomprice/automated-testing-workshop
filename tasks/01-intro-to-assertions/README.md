@@ -12,12 +12,6 @@ For this exercise you will need to write tests for a basic library. To do this
 you will need to check out the syntax for mocha and chai.
 
 
-## References
-* [mocha](https://mochajs.org/)
-* [chaijs](http://chaijs.com/)
-* [chai expect syntax](http://chaijs.com/api/bdd/)
-
-
 ## Mocha layout
 
 Mocha uses `describe` `context` and `it` blocks to layout tests.
@@ -102,3 +96,9 @@ expect(foo).to.be.undefined();
 expect(foo).to.equal(NaN);
 expect(foo).to.be.NaN();
 ```
+
+
+## References
+* [mocha](https://mochajs.org/)
+* [chaijs](http://chaijs.com/)
+* [chai expect syntax](http://chaijs.com/api/bdd/)
