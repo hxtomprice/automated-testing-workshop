@@ -1,9 +1,10 @@
 'use strict';
 
-console.log('here');
 const React = require('react');
 const ReactDom = require('react-dom');
 const { Router, Route, Link, browserHistory } = require('react-router');
+
+const Component = require('./05-react/component');
 
 const App = React.createClass({
   render() {
@@ -64,7 +65,12 @@ const Five = React.createClass({
   render() {
     require('./05-react/test');
     return (
-      <h2>05 - React</h2>
+      <div>
+        <h2>05 - React</h2>
+        <Component secondHeading="Such wow">
+          <p>This is the best!</p>
+        </Component>
+      </div>
     );
   }
 });

@@ -22,8 +22,10 @@ module.exports = {
   },
 
  /*
-  * 
-  *
+  * getExchangeRates performs a request to a third party api
+  * if the api returns an error we will pass this on
+  * if we get no data we will callback with a generic message
+  * otherwise we will callback with a subset of the result
   */
   getExchangeRates(cb) {
     $.get({

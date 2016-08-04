@@ -2,6 +2,11 @@
 
 const React = require('react');
 
+/*
+ * An awesome component which renders a header and a button which toggles the
+ * background color between red and blue
+ * This accepts optional props of secondHeading and children
+ */
 module.exports = React.createClass({
   propTypes: {
     children: React.PropTypes.node,
@@ -14,6 +19,10 @@ module.exports = React.createClass({
     };
   },
 
+ /*
+  * When the button is clicked we toggle the background color between red and
+  * blue by changing state
+  */
   handleButtonClick() {
     this.setState({
       color: this.state.color === 'blue' ? 'red' : 'blue'

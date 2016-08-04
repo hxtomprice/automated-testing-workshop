@@ -6,7 +6,7 @@ const expect = require('chai')
   .use(require('sinon-chai'))
   .expect;
 
-const Component = require('./component.jsx');
+const Component = require('./component');
 
 let component;
 
