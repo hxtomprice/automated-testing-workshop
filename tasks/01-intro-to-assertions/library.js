@@ -60,7 +60,7 @@ module.exports = {
 
  /*
   * random will take a single parameter
-  * it will return a random string which has been appended and prepended by
+  * it will return a random 5 character string which has been appended and prepended by
   * the parameter passed in
   * random string generated will use the character set [a-z] (lowercase)
   */

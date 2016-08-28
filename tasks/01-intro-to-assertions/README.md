@@ -6,7 +6,7 @@ asynchronous javascript using nodejs or in your browser.
 Chai is an assertion library which allows your tests to follow more of a natural
 language to make tests more readable.
 
-This exercise will get you familiar with both of these.
+This exercise will  get you familiar with both of these.
 
 For this exercise you will need to write tests for a basic library. To do this
 you will need to check out the syntax for mocha and chai.
@@ -48,7 +48,7 @@ describe('myFunction', () => {
 
 If a test fails it will print out to the terminal as
 ```
-my function when today is Saturday should error
+myFunction when today is Saturday should error
 ```
 
 

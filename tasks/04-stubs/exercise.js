@@ -6,6 +6,7 @@ const expect = require('chai')
 const sinon = require('sinon');
 
 const library = require('./library');
+const $ = require('jquery');
 
 
 /*******************************************************************************
