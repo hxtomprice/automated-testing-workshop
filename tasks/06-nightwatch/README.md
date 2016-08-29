@@ -1,4 +1,4 @@
-# Task 1 - Nightwatch
+# Task 6 - Nightwatch
 
 Nightwatch is a framework for writing selenium tests. It alows you to load your
 webpage in the browser, run commands against it, and perform assertions to check
@@ -7,8 +7,18 @@ that it is behaving as expected.
 We choose to use Nightwatch for its clean syntax and extendability.
 
 In this exercise you will need to write a test in nightwatch which covers the
-test website.
+test website running on `localhost:8080`.
 
+
+## Getting started
+You will need to be running the webpack server to run tests against. Run this
+with `npm start`.
+To install everything you need to run the Nightwatch tests you will need to run
+`npm run selenium:install`. This will install selenium and chromedriver which
+will allow your test to control Chrome on your machine.
+Run the exercise test with `npm run nightwatch:test`.
+You can run the soltution with
+`./node_modules/.bin/nightwatch -t tasks/06-nightwatch/solutions.js`.
 
 ## More about Nightwatch
 

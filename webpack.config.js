@@ -5,7 +5,7 @@ const loaders = [
 ];
 
 module.exports = {
-  entry: './tasks/index.js',
+  entry: './index.js',
   externals: {
     'cheerio': 'window',
     'react/addons': true,

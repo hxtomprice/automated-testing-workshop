@@ -6,33 +6,13 @@ body {
   background: #cceaff;
 }
 
-div#content {
-  background: #fff;
-  width: 90%;
-  margin: 0 auto;
-  box-shadow: 1px 1px 10px 2px rgba(10,10,10,0.1);
-  border-radius: 2px;
-}
-
 ul.nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-ul.nav > li {
-  display: inline-block;
-  line-height: 40px;
-  padding: 10px;
-  width: 20%;
-}
-
 ul.nav > li > a {
   background: #9933cc;
-  border-radius: 3px;
   color: #fff;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
 }
