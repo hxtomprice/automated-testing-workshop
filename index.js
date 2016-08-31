@@ -88,6 +88,15 @@ const Six = React.createClass({
   }
 });
 
+const Seven = React.createClass({
+  render() {
+    require('./tasks/07-testing-practices/test');
+    return (
+      <h2 className="exercise-seven">07 - Testing best practices</h2>
+    );
+  }
+});
+
 
 ReactDom.render((
   <Router history={browserHistory}>
@@ -98,6 +107,7 @@ ReactDom.render((
       <Route path="four" component={Four}/>
       <Route path="five" component={Five}/>
       <Route path="six" component={Six}/>
+      <Route path="seven" component={Seven}/>
     </Route>
   </Router>
 ), document.getElementById('root'));
