@@ -3,12 +3,22 @@
 const React = require('react');
 
 module.exports = React.createClass({
+  getInitialState() {
+    return {
+      renderButton: false
+    };
+  },
 
   render() {
     return (
       <div>
         <h1>Nightwatch demo</h1>
         { this.renderModalButtonGroup() }
+
+        { this.renderInput() }
+        { this.state.renderButton ? this.renderButton() : null }
+
+
         { this.renderInfoModal() }
         { this.renderPicturesModal() }
         { this.renderMapModal() }
@@ -31,6 +41,39 @@ module.exports = React.createClass({
           <li><a href="#" data-toggle="modal" data-target="#nightwatch">Nightwatch</a></li>
         </ul>
       </div>
+    );
+  },
+
+  renderInput() {
+    return (
+      <div>
+        <br />
+        <br />
+        <input type="text" name="myinput" onBlur={ this.handleInputBlur } />
+        <br />
+      </div>
+    );
+  },
+
+  handleInputBlur(e) {
+    var value = e.currentTarget.value;
+
+    window.setTimeout(() => {
+      if (value === 'testme') {
+        this.setState({
+          renderButton: true
+        });
+      } else {
+        this.setState({
+          renderButton: false
+        });
+      }
+    }, 1000);
+  },
+
+  renderButton() {
+    return (
+      <button type="button" className="btn btn-info" data-toggle="modal" data-target="#more-info">My extra button</button>
     );
   },
 
