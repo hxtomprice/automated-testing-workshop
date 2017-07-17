@@ -1,6 +1,4 @@
-'use strict';
-
-const $ = require('jquery');
+const $ = require('jquery')
 
 module.exports = {
 
@@ -9,7 +7,7 @@ module.exports = {
   * this will not need to be tested for the purposes of this exercise
   */
   random() {
-    return Math.floor( Math.random() * 100 );
+    return Math.floor( Math.random() * 100 )
   },
 
 
@@ -18,7 +16,7 @@ module.exports = {
   * it will double a random number then return it
   */
   doubleRandom() {
-    return this.random() * 2;
+    return this.random() * 2
   },
 
  /*
@@ -31,8 +29,8 @@ module.exports = {
     $.get({
       url: 'http://api.fixer.io/latest?base=GBP',
     }, function(err, res, body) {
-      if (err || !body) return cb(err || 'Something went wrong', null);
-      return cb(null, body.rates);
-    });
+      if (err || !body) return cb(err || 'Something went wrong', null)
+      return cb(null, body.rates)
+    })
   }
-};
+}

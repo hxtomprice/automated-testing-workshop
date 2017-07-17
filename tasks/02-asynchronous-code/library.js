@@ -1,5 +1,3 @@
-'use strict';
-
 /*
  * A basic library with helper functions
  * Each helper will callback with a result
@@ -13,8 +11,8 @@ module.exports = {
   */
   slowDouble(n, cb) {
     setTimeout(() => {
-      return cb(n * 2);
-    }, 1000);
+      return cb(n * 2)
+    }, 1000)
   },
 
 
@@ -29,8 +27,8 @@ module.exports = {
       return cb(null, {
         code: 200,
         result: 'Of course this worked'
-      });
-    }, 1000);
+      })
+    }, 1000)
   },
 
-};
+}

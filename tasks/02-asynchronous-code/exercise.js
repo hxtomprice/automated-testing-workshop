@@ -1,9 +1,8 @@
-'use strict';
 const expect = require('chai')
   .use(require('dirty-chai'))
-  .expect;
+  .expect
 
-const library = require('./library');
+const library = require('./library')
 
 
 /*******************************************************************************
@@ -26,17 +25,17 @@ describe('asynchronous code', () => {
 
     it('should callback with the parameter multiplied by 2', (done) => {
 
-    });
+    })
 
-  });
+  })
 
 
   describe('alwaysSuccessfulRequest', () => {
 
     it('should callback with no error and a result object', (done) => {
 
-    });
+    })
 
-  });
+  })
 
-});
+})

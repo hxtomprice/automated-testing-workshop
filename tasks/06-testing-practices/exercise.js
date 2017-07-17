@@ -1,10 +1,10 @@
-'use strict';
-const library = require('./library');
+'use strict'
+const library = require('./library')
 const expect = require('chai')
   .use(require('dirty-chai'))
   .use(require('sinon-chai'))
-  .expect;
-const sinon = require('sinon');
+  .expect
+const sinon = require('sinon')
 
 /*******************************************************************************
  * Testing best practices
@@ -13,11 +13,11 @@ const sinon = require('sinon');
  ******************************************************************************/
 describe('testing best practices', () => {
   it('should pass', () => {
-    expect(true).to.be.true();
-  });
+    expect(true).to.be.true()
+  })
 
 
  /*
   *  ???
   */
-});
+})

@@ -1,12 +1,11 @@
-'use strict';
 const expect = require('chai')
   .use(require('dirty-chai'))
   .use(require('sinon-chai'))
-  .expect;
-const sinon = require('sinon');
+  .expect
+const sinon = require('sinon')
 
-const library = require('./library');
-const $ = require('jquery');
+const library = require('./library')
+const $ = require('jquery')
 
 
 /*******************************************************************************
@@ -28,42 +27,39 @@ const $ = require('jquery');
 describe('doubleRandom', () => {
 
   beforeEach(() => {
-
-  });
+    sinon.stub(library, 'random')
+  })
 
   afterEach(() => {
-
-  });
+    library.random.restore()
+  })
 
   context('when the random function returns 3', () => {
     beforeEach(() => {
-
-    });
-
-    afterEach(() => {
-
-    });
+      library.random.returns(3)
+    })
 
     it('should return 6', () => {
-
-    });
-  });
+      const result = library.doubleRandom()
+      expect(result).to.equal(6)
+    })
+  })
 
   context('when the random function returns 77', () => {
     beforeEach(() => {
 
-    });
+    })
 
     afterEach(() => {
 
-    });
+    })
  
     it('should return 154', () => {
 
-    });
-  });
+    })
+  })
 
-});
+})
 
 
 /*******************************************************************************
@@ -79,53 +75,53 @@ describe('getExchangeRates', () => {
 
   beforeEach(() => {
 
-  });
+  })
 
   afterEach(() => {
 
-  });
+  })
 
   context('when the api call returns an error', () => {
     beforeEach(() => {
 
-    });
+    })
 
     afterEach(() => {
 
-    });
+    })
 
     it('should call back with the error', () => {
 
-    });
-  });
+    })
+  })
 
   context('when the api call does not error but returns no data', () => {
     beforeEach(() => {
 
-    });
+    })
 
     afterEach(() => {
 
-    });
+    })
  
     it('should call back with the data', () => {
 
-    });
-  });
+    })
+  })
 
 
   context('when the api call successfully returns exchange rates', () => {
     beforeEach(() => {
 
-    });
+    })
 
     afterEach(() => {
 
-    });
+    })
  
     it('should call back with the data', () => {
 
-    });
-  });
+    })
+  })
 
-});
+})

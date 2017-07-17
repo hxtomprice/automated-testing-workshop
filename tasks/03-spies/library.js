@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
 
  /*
@@ -8,7 +6,7 @@ module.exports = {
   * this will not need to be tested for the purposes of this exercise
   */
   square(n) {
-    return n * n;
+    return n * n
   },
 
 
@@ -18,7 +16,7 @@ module.exports = {
   * this uses square helper
   */
   fourthPower(n) {
-    return this.square( this.square(n) );
+    return this.square( this.square(n) )
   },
 
 
@@ -28,6 +26,6 @@ module.exports = {
   * this uses the square helper
   */
   squareArray(arr) {
-    return arr.map( (el) => this.square(el) );
+    return arr.map( (el) => this.square(el) )
   }
-};
+}

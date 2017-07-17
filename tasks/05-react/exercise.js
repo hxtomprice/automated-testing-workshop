@@ -1,12 +1,12 @@
-const React = require('react');
-const shallow = require('enzyme').shallow;
-const mount = require('enzyme').mount;
+const React = require('react')
+const shallow = require('enzyme').shallow
+const mount = require('enzyme').mount
 const expect = require('chai')
   .use(require('dirty-chai'))
   .use(require('sinon-chai'))
-  .expect;
+  .expect
 
-const Component = require('./component');
+const Component = require('./component')
 
 /*******************************************************************************
  * React
@@ -25,21 +25,21 @@ describe('props', () => {
   context('with a secondHeading prop', () => {
     it('should render an h2 using the prop string', () => {
 
-    });
-  });
+    })
+  })
 
   context('without a secondHeading prop', () => {
     it('should not render an h2', () => {
 
-    });
-  });
+    })
+  })
 
   context('with children passed in', () => {
     it('should render the children', () => {
 
-    });
-  });
-});
+    })
+  })
+})
 
 
 /*******************************************************************************
@@ -52,15 +52,15 @@ describe('state', () => {
   context('with a blue color in state', () => {
     it('should render a blue component', () => {
 
-    });
-  });
+    })
+  })
 
   context('with a red color in state', () => {
     it('should render a red component', () => {
 
-    });
-  });
-});
+    })
+  })
+})
 
 
 /*******************************************************************************
@@ -72,6 +72,6 @@ describe('state', () => {
 describe('button click', () => {
   it('should toggle the color state', () => {
 
-  });
-});
+  })
+})
 

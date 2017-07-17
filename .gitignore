@@ -1,5 +1,4 @@
 node_modules
 npm-debug.log
 www/automated-testing-workshop.js
-tasks/06-nightwatch/test_output
-selenium-debug.log
+www/brand-*

@@ -27,23 +27,23 @@ describe('myFunction', () => {
   context('when today is Saturday', () => {
     it('should error', () => {
 
-    });
+    })
 
     it('should not return a result', () => {
 
-    });
-  });
+    })
+  })
 
   context('when today is monday', () => {
     it('should not error', () => {
 
-    });
+    })
 
     it('should return a result', () => {
 
-    });
-  });
-});
+    })
+  })
+})
 ```
 
 If a test fails it will print out to the terminal as
@@ -56,20 +56,20 @@ myFunction when today is Saturday should error
 
 ### Basic equality check
 ```
-const foo = 'bar';
-expect(foo).to.equal('bar');
+const foo = 'bar'
+expect(foo).to.equal('bar')
 ```
 
 ### Equality for objects
 The following will not work
 ```
-const foo = { bar: 'baz' };
-expect(foo).to.equal({ bar: 'baz'} );
+const foo = { bar: 'baz' }
+expect(foo).to.equal({ bar: 'baz'} )
 ```
 But this will
 ```
-const foo = { bar: 'baz' };
-expect(foo).to.equal({ bar: 'baz'} );
+const foo = { bar: 'baz' }
+expect(foo).to.equal({ bar: 'baz'} )
 ```
 
 ### Other helpers
@@ -77,24 +77,24 @@ The following pairs of assertions are exactly the same.
 Chai gives some nice helpers to make your tests more readable.
 Use the helpers where possible
 ```
-expect(foo).to.equal(false);
-expect(foo).to.be.false();
+expect(foo).to.equal(false)
+expect(foo).to.be.false()
 ```
 ```
-expect(foo).to.equal(true);
-expect(foo).to.be.true();
+expect(foo).to.equal(true)
+expect(foo).to.be.true()
 ```
 ```
-expect(foo).to.equal(null);
-expect(foo).to.be.null();
+expect(foo).to.equal(null)
+expect(foo).to.be.null()
 ```
 ```
-epxect(foo).to.equal(undefined);
-expect(foo).to.be.undefined();
+epxect(foo).to.equal(undefined)
+expect(foo).to.be.undefined()
 ```
 ```
-expect(foo).to.equal(NaN);
-expect(foo).to.be.NaN();
+expect(foo).to.equal(NaN)
+expect(foo).to.be.NaN()
 ```
 
 

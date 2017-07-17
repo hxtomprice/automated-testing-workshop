@@ -1,5 +1,3 @@
-'use strict';
-
 /*
  * A basic library with helper functions
  */
@@ -11,7 +9,7 @@ module.exports = {
   * it will return the result of multiplying it by two
   */
   double(n) {
-    return n * 2;
+    return n * 2
   },
 
 
@@ -21,8 +19,8 @@ module.exports = {
   * if the parameter is not a number it will return NaN
   */
   triple(n) {
-    if (typeof n !== 'number') return NaN;
-    return n * 3;
+    if (typeof n !== 'number') return NaN
+    return n * 3
   },
 
 
@@ -31,8 +29,7 @@ module.exports = {
   * it will return the integer in the libaries number property
   */
   getNumber() {
-    return this.number;
-
+    return this.number
   },
 
  /*
@@ -52,10 +49,10 @@ module.exports = {
   * it will insert the number passed in to a random position in the array
   */
   insert(n) {
-    let arr = [0, 1, 2, 3, 4, 5];
-    const index = Math.floor( Math.random() * 6 );
-    arr.splice(index, 0, n);
-    return arr;
+    let arr = [0, 1, 2, 3, 4, 5]
+    const index = Math.floor( Math.random() * 6 )
+    arr.splice(index, 0, n)
+    return arr
   },
 
  /*
@@ -65,11 +62,11 @@ module.exports = {
   * random string generated will use the character set [a-z] (lowercase)
   */
   random(s) {
-    let randomString = s;
+    let randomString = s
     ['','','','',''].map(() => {
-      randomString += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-    });
-    return randomString + s;
+      randomString += String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+    })
+    return randomString + s
   }
 
-};
+}
