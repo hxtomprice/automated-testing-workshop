@@ -1,13 +1,13 @@
-const expect = require('chai')
-  .use(require('dirty-chai'))
-  .expect
+'use strict';
 
-const library = require('./library')
+var expect = require('chai').use(require('dirty-chai')).expect;
+
+var library = require('./library');
 
 /*******************************************************************************
  * Introduction to assertions
  * 
- * -- Part 1 (Example)
+ * -- Part 1
  * Use the chai syntax to ensure that the `double` helper works as expected
  * 
  * -- Documentation
@@ -15,16 +15,10 @@ const library = require('./library')
  * 
  ******************************************************************************/
 
-describe('double', () => {
+describe('double', function () {
 
-  it('should multiply the input by two', () => {
-    const input = 6
-    const result = library.double(input) // Call the helper from the library
-    expect(result).to.equal(12) // Run assertion on the result
-  })
-
-})
-
+  it('should multiply the input by two', function () {});
+});
 
 /*******************************************************************************
  * -- Part 2
@@ -32,28 +26,20 @@ describe('double', () => {
  * expected
  ******************************************************************************/
 
-describe('triple', () => {
+describe('triple', function () {
 
-  context('when passed an integer', () => {
-    it('should multiply the input by three', () => {
+  context('when passed an integer', function () {
+    it('should multiply the input by three', function () {});
+  });
 
-    })
-  })
+  context('when passed an array', function () {
+    it('should return NaN', function () {});
+  });
 
-  context('when passed an array', () => {
-    it('should return NaN', () => {
-
-    })
-  })
-
-  context('when passed a string', () => {
-    it('should return NaN', () => {
-
-    })
-  })
-
-})
-
+  context('when passed a string', function () {
+    it('should return NaN', function () {});
+  });
+});
 
 /*******************************************************************************
  * -- Part 3
@@ -62,21 +48,14 @@ describe('triple', () => {
  * Remember to set the value of `library.number` back when you're done
  ******************************************************************************/
 
-describe('getNumber', () => {
+describe('getNumber', function () {
 
-  before(() => {
+  before(function () {});
 
-  })
+  after(function () {});
 
-  after(() => {
-
-  })
-
-  it('should return the integer in the libraries "number" property', () => {
-
-  })
-
-})
+  it('should return the integer in the libraries "number" property', function () {});
+});
 
 /*******************************************************************************
  * -- Part 4
@@ -84,14 +63,10 @@ describe('getNumber', () => {
  * expected
  ******************************************************************************/
 
-describe('person', () => {
+describe('person', function () {
 
-  it('should return an object using the params provided', () => {
-
-  })
-
-})
-
+  it('should return an object using the params provided', function () {});
+});
 
 /*******************************************************************************
  * -- Part 5
@@ -100,14 +75,10 @@ describe('person', () => {
  * 
  ******************************************************************************/
 
-describe('insert', () => {
+describe('insert', function () {
 
-  it('should insert the parameter into an array', () => {
-
-  })
-
-})
-
+  it('should insert the parameter into an array', function () {});
+});
 
 /*******************************************************************************
  * -- Part 6
@@ -116,10 +87,7 @@ describe('insert', () => {
  * You will need to use some regex to ensure the correct format
  ******************************************************************************/
 
-describe('random', () => {
-  
-  it('should start and end with the string passed', () => {
+describe('random', function () {
 
-  })
-
-})
+  it('should start and end with the string passed', function () {});
+});

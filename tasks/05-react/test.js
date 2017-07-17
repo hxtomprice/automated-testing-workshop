@@ -1,1 +1,1 @@
-import 'mocha!./exercise';
+import 'mocha!./exercise'

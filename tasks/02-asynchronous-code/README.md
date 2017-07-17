@@ -13,6 +13,6 @@ assertions in the callback of the function you are testing.
 ```
 myFunction(params, () => {
   // Run assertions here
-  done();
-});
+  done()
+})
 ```

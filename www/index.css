@@ -1,18 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #cceaff;
-}
-
-ul.nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul.nav > li > a {
-  background: #9933cc;
-  color: #fff;
+#mocha {
+  margin: 0 !important;
 }
